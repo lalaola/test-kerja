@@ -12,7 +12,6 @@ const ProductList = () => {
     }, [getDataProdctCloud]);
     return (
         <div>
-            olla test
             <ListProduct/>
         </div>
     );
