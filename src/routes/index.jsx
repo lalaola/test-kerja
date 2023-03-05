@@ -5,12 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '../component/navbar';
 
 const Index = () => {
-    return (
-        <BrowserRouter>
-        <Navbar/>
-          <Rute/>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <div className="wrap">
+        <Navbar />
+        <Rute />
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default Index;

@@ -142,6 +142,7 @@ img.card-img-top {
   .home .gambar{
     flex-direction: column;
     justify-content: flex-start;
+    display: none !important;
   }
   .home .gambar .text-end{
     display: none;
