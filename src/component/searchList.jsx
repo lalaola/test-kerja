@@ -11,7 +11,6 @@ const SeacrhList = () => {
     const { searchProduct, addEdit, addProduct } = useSelector((state) => state.JobReducer)
     const [seachValue, setSeachValue] = useState('');
     const [add, setAdd] = useState(false);
-    let search
     useEffect(() => {
         console.log("lala", searchProduct)
         const unsicribe = () => {
@@ -21,11 +20,7 @@ const SeacrhList = () => {
             unsicribe()
         };
     }, []);
-    const handleSearch = () => {
-        console.log(seachValue, searchProduct)
-        search = searchProduct.filter(produk => produk.namaProduk.nama.includes(seachValue))
-        console.log('hasil: ', search)
-    }
+
     const handleOpenAdd = () => {
         setAdd(add ? false : true)
     }
@@ -37,7 +32,8 @@ const SeacrhList = () => {
                 <div className="col-sm-8 d-flex container mt-4">
                     <input type="text" value={seachValue}
                         onChange={(e) => {
-                            setSeachValue(e.target.value)
+                            let search = e.target.value
+                            setSeachValue(search.toLowerCase())
                         }}
                         className="form-control" placeholder="Cari keyword yang ingin anda cari" aria-label="City" />
 
