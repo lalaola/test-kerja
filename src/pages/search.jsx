@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import SeacrhList from '../component/searchList';
 import { searchDataCloud } from '../redux/action/listProduct';
+import { motion } from 'framer-motion';
+
 
 const Search = () => {
-
     const dispatch = useDispatch()
     useEffect(() => {
         console.log('test masuk')
@@ -12,10 +13,14 @@ const Search = () => {
     }, [searchDataCloud]);
 
     return (
-        <div>
+        <motion.div
+        initial={{opacity: 0 }}
+        animate={{ opacity :1}}
+        transition={{delay:1 , duration:1}}
+        >
            
             <SeacrhList/>
-        </div>
+        </motion.div>
     );
 }
 
