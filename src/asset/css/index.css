@@ -1,0 +1,168 @@
+/* Define standard variables and values for website */
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap");
+
+/*# sourceMappingURL=index.css.map */
+.model-add {
+  background-color: rgba(0, 0, 0, 0.789);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+}
+
+.wrap-form {
+  height: 80%;
+  border-radius: 12px;
+  position: relative;
+  background-color: #D3504A;
+}
+
+.alert.alert-success {
+  font-size: 12px;
+}
+
+.card.mx-2 {
+  height: 420px;
+}
+
+.ket {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.btn-upload {
+  border: solid 1px black;
+}
+
+label.form-label {
+  font-size: 16px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.home {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.gambar {
+  height: 90vh;
+}
+
+.gambar p {
+  font-weight: bold;
+}
+
+.nav {
+  background-color: black;
+  box-shadow: 0 -20px 42px 5px rgba(237, 237, 237, 0.24);
+  color: white;
+}
+
+.home .text h2 {
+  color: #D3504A;
+  text-shadow: 4px 4px 4px rgba(20, 77, 209, 0.733);
+
+}
+
+.home .text {}
+
+.home .gambar img {
+  animation: hero 2000ms infinite alternate linear;
+
+}
+
+@keyframes hero {
+  from {
+    transform: translateY(-1rem)
+  }
+
+  to {
+    transform: translateY(1.5rem)
+  }
+}
+
+
+.card h5,
+.card p {
+  color: #D3504A;
+}
+
+.card p {
+  color: black;
+}
+
+.harga {
+  font-size: 14px;
+}
+
+.edit {
+  background-color: rgba(0, 0, 0, 0.789);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  justify-content: center;
+}
+
+.harga {
+  display: flex;
+}
+.stok{
+  text-align: center;
+}
+img.card-img-top {
+  height: 60%;
+}
+.wrap-col-4 {
+  padding-bottom: 2rem;
+}
+.col-6.col-md-4 {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .btn-edit {
+    font-size: 10px !important;
+  }
+  .card.mx-2 {
+    height: 280px;
+}
+p.card-text.harga {
+  font-size: 12px;
+}
+  /* For mobile phones: */
+  .card-text-batas {
+    display: none !important;
+  }
+  img.card-img-top {
+    height: 100px;
+    object-fit: cover;
+}
+p.card-text.harga {
+  margin-bottom: 1px;
+}
+  .stok{
+    font-size: 12px;
+    text-align: start;
+    margin-top: .5rem;
+  }
+
+  .harga {
+    display: block;
+  }
+}
