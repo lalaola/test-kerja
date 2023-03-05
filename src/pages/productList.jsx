@@ -8,16 +8,11 @@ const ProductList = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         console.log('test masuk')
-        const unsicribe = () =>{
-            dispatch(getDataProdctCloud())
-        } 
-        return () => {
-            unsicribe()
-        };
-    }, []);
+        dispatch(getDataProdctCloud())
+    }, [getDataProdctCloud]);
     return (
         <div>
-            olla
+            olla test
             <ListProduct/>
         </div>
     );

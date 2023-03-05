@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../component/hero';
 import bag from '../asset/test1.png'
 const Homepage = () => {
+    
     return (
         <div className=' home '>
             <div className=" text col-8 col-md-6"> <Hero /></div>
