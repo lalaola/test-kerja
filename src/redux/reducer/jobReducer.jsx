@@ -1,12 +1,12 @@
 import { EDIT_CLOUD_BTN } from "../../component/card";
-import { DETAIL_JOB_LIST, GET_LIST_JOB, SEARCH_LIST_JOB } from "../action/jobAction";
-import { ADD_CLOUD, ADD_DATA, EDIT_CLOUD, GET_DATA, GET_DATA_CLOUD, SEARCH_CLOUD } from "../action/listProduct";
+import { ADD_CLOUD, GET_DATA, GET_DATA_CLOUD, SEARCH_CLOUD } from "../action/listProduct";
 
 const innitialState ={
     addProduct : false,
     addProductLoading : false,
     addProductError : false,
 
+    Addupload : false,
     seachValue : '',
     
     searchProduct : false,

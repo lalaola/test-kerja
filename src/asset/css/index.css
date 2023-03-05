@@ -15,10 +15,10 @@
 }
 
 .wrap-form {
-  height: 80%;
   border-radius: 12px;
   position: relative;
   background-color: #D3504A;
+  padding-bottom: 1rem;
 }
 
 .alert.alert-success {

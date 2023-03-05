@@ -69,9 +69,6 @@ const Form = () => {
         );
     }
 
-
-
-
     return (
         <div>
             <div className="mb-1 form">
@@ -115,7 +112,7 @@ const Form = () => {
             </div>
             {
                 sukses ? <div className="alert alert-success" role="alert">
-                    A simple success alert—check it out!
+                   Product telah ditambahkan
                 </div> : ""
             }
 
