@@ -6,6 +6,8 @@ const innitialState ={
     addProduct : false,
     addProductLoading : false,
     addProductError : false,
+
+    seachValue : '',
     
     searchProduct : false,
     searchProductLoading : false,
