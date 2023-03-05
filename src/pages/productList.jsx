@@ -7,6 +7,7 @@ import { getDataProdctCloud } from '../redux/action/listProduct';
 const ProductList = () => {
     const dispatch = useDispatch()
     useEffect(() => {
+        console.log('test masuk')
         const unsicribe = () =>{
             dispatch(getDataProdctCloud())
         } 
@@ -16,7 +17,7 @@ const ProductList = () => {
     }, []);
     return (
         <div>
-            
+            olla
             <ListProduct/>
         </div>
     );
