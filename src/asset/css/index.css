@@ -135,7 +135,17 @@ img.card-img-top {
 .col-6.col-md-4 {
   margin-bottom: 1rem;
 }
+.home .gambar{
+  justify-content: flex-end;
+}
 @media only screen and (max-width: 768px) {
+  .home .gambar{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .home .gambar .text-end{
+    display: none;
+  }
   .btn-edit {
     font-size: 10px !important;
   }
@@ -165,4 +175,9 @@ p.card-text.harga {
   .harga {
     display: block;
   }
+}
+
+.nav a{
+  text-decoration: none;
+  color: aliceblue;
 }
